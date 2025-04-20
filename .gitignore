@@ -1,24 +1,45 @@
-# Logs
-logs
-*.log
+# dependencies
+/node_modules/
+
+# production build
+/build/
+/dist/
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+# Editor directories and settings
+.vscode/
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+
+# testing
+/coverage/
+*.lcov
+
+# macOS system file
+.DS_Store
+
+# Parcel or Vite cache
+.cache/
+.parcel-cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
